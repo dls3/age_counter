@@ -1,0 +1,52 @@
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+  display: table;
+}
+
+.date_select {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.birthday {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.phrase {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  display: none;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+.first_dropdowns {
+  width: 80px;
+}
+
+.second_dropdowns {
+  width: 90px;
+}
+
+#age {
+  font-size: 200%;
+}
+
+@media (max-width: 750px) {
+  .age-sentence, .birthday {
+    font-size: 2em;
+  }
+}
