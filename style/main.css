@@ -43,6 +43,7 @@ body {
 
 #age {
   font-size: 200%;
+  color: #5F5F5F;
 }
 
 @media (max-width: 750px) {

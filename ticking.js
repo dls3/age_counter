@@ -84,20 +84,23 @@ $('#go_button').click(function(){
   // Alert if fields are not filled
   if (isNaN(year) || isNaN(month) || isNaN(day)) {
     alert("Oops! Please fill in all of the fields")
-  } else {
+  }
+
+  
+
+  else {
     date_str = year + month + day + "T" + hour + minute;
 
     var birthday = moment(date_str);
 
     $(".date_select").css('display','none')
-      console.log('regular string ' + date_str);
-      console.log('in birthday string ' + birthday.format())
     update_birthday(birthday);
     $(".phrase").css('display','table-cell')
   }
 });
 
-var ms_to_year = moment.duration(1, 'years') / moment.duration(1);
+var ms_to_year = moment.duration(1, 'years') / moment.duration(1);    // ms in a year (divide moment by this var to get years)
+console.log(ms_to_year)
 
 function update_birthday(birthday) {
   var age = moment().diff(birthday) / ms_to_year;
