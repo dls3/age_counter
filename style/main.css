@@ -15,14 +15,14 @@ body {
 }
 
 .birthday {
-  font-size: 3em;
+  font-size: 2.75em;
   font-weight: bold;
   text-align: center;
 }
 
 .phrase {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   display: table-cell;
   vertical-align: middle;
