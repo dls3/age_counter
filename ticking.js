@@ -99,6 +99,7 @@ var date_str = year + month + day + "T" + hour + minute;
     $(".date_select").css('display','none')
     update_birthday(birthday);
     $(".phrase").css('display','table-cell')
+    $(".bottom_phrase").css('display','table-cell')
   }
 });
 
