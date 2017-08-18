@@ -13,7 +13,7 @@ var current_year = moment().year();
 // Must pick year and month before date (because of leap year)
 // Year
 for (var i = current_year; i >= 1900; i--){
-  $('#year').append('<option class="selector_years">'+i+'</option>');
+  $('#year').append('<option class="selector_years">' + i + '</option>');
 }
 
 // Month
@@ -24,7 +24,7 @@ $('#year').change(function(){     //allow month selection after year
     if ($('.selector_months').length == 0) {
       for (var i=1; i<=12; i++){
         i = zero_pad(i);
-        $('#month').append('<option class="selector_months">'+i+'</option>');
+        $('#month').append('<option class="selector_months">' + i + '</option>');
       }
     }
     else {
@@ -47,7 +47,7 @@ $('#month').change(function(){     //allow day selection after month
     last_date = moment(str).endOf('month').date();
     for (var i = 1; i <= last_date; i++){
       i = zero_pad(i);
-      $('#day').append('<option class="selector_days">'+i+'</option>');
+      $('#day').append('<option class="selector_days">' + i + '</option>');
     }
   }
   else {
@@ -61,12 +61,12 @@ $('#month').change(function(){     //allow day selection after month
 // Hour
 for (var i = 1; i <= 12; i++){
   i = zero_pad(i);
-  $('#hour').append("<option>"+i+"</option>")
+  $('#hour').append("<option>" + i + "</option>")
 }
 // Minute
 for (var i = 0; i <= 59; i++){
   i = zero_pad(i);
-  $('#minute').append("<option>"+i+"</option>");
+  $('#minute').append("<option>" + i + "</option>");
 }
 
 // Submit selection
