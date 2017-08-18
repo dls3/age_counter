@@ -88,7 +88,7 @@ var date_str = year + month + day + "T" + hour + minute;
   }
 
   else if (moment(date_str) > moment() ) {
-    alert("Oops! You weren't born in the future")
+    alert("Oops! You weren't born in the future, were you?")
   }
 
   else {
