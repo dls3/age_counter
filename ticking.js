@@ -80,13 +80,16 @@ $('#go_button').click(function(){
   if (am_pm == "PM") {
     hour = hour + 12;
   }
+var date_str = year + month + day + "T" + hour + minute;
 
   // Alert if fields are not filled
   if (isNaN(year) || isNaN(month) || isNaN(day)) {
     alert("Oops! Please fill in all of the fields")
   }
 
-  
+  else if (moment(date_str) > moment() ) {
+    alert("Oops! You weren't born in the future")
+  }
 
   else {
     date_str = year + month + day + "T" + hour + minute;
@@ -100,7 +103,6 @@ $('#go_button').click(function(){
 });
 
 var ms_to_year = moment.duration(1, 'years') / moment.duration(1);    // ms in a year (divide moment by this var to get years)
-console.log(ms_to_year)
 
 function update_birthday(birthday) {
   var age = moment().diff(birthday) / ms_to_year;
