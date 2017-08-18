@@ -29,6 +29,15 @@ body {
   display: none;
 }
 
+.bottom_phrase {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  display: none;
+}
+
 .dropdown {
   text-align: center;
 }
